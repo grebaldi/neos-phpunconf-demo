@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "neos/phpunconference-demo",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Neos\\PhpUnconference\\Demo": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Neos.PhpUnconference.Demo"
+        }
+    }
+}
