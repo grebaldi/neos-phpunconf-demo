@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e64ba96ff39c382876f46aa504c2cd90",
-    "content-hash": "f838021fa0cdd81ab0a2e3095a64ef5c",
+    "hash": "c24f6f810b534a489bc055c92ee79bcd",
+    "content-hash": "11c285aba5e9cba4acba3d3cabdc1aef",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1597,6 +1597,46 @@
                 "uuid"
             ],
             "time": "2016-08-02 18:39:32"
+        },
+        {
+            "name": "sitegeist/monocle",
+            "version": "dev-feature/react-ui-mfi",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sitegeist/Sitegeist.Monocle.git",
+                "reference": "17ea370e0b2caa0094b7c135e09c3f17846a971c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sitegeist/Sitegeist.Monocle/zipball/17ea370e0b2caa0094b7c135e09c3f17846a971c",
+                "reference": "17ea370e0b2caa0094b7c135e09c3f17846a971c",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/neos": "~2.3.0"
+            },
+            "type": "typo3-flow-plugin",
+            "autoload": {
+                "psr-0": {
+                    "Sitegeist\\Monocle": "Classes"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Ficzel",
+                    "email": "ficzel@sitegeist.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An ts2 based styleguide implementation for Neos",
+            "support": {
+                "source": "https://github.com/sitegeist/Sitegeist.Monocle/tree/feature/react-ui-mfi",
+                "issues": "https://github.com/sitegeist/Sitegeist.Monocle/issues"
+            },
+            "time": "2016-09-15 20:42:12"
         },
         {
             "name": "symfony/console",
@@ -3746,6 +3786,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "sitegeist/monocle": 20,
         "typo3/buildessentials": 20,
         "flowpack/behat": 20
     },

@@ -11,13 +11,18 @@
         "docs": "http://neos.readthedocs.org/",
         "source": "https://github.com/neos/neos-base-distribution"
     },
+	"repositories": [{
+		"url": "git@github.com:sitegeist/Sitegeist.Monocle.git",
+		"type": "vcs"
+	}],
     "config": {
         "vendor-dir": "Packages/Libraries",
         "bin-dir": "bin"
     },
     "require": {
         "typo3/neos": "~2.3.0",
-        "typo3/neos-nodetypes": "~2.3.0"
+        "typo3/neos-nodetypes": "~2.3.0",
+        "sitegeist/monocle": "dev-feature/react-ui-mfi"
     },
     "require-dev": {
         "typo3/buildessentials": "3.3.x-dev",
