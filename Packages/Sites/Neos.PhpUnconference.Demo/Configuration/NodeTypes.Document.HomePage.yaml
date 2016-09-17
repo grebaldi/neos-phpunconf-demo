@@ -1,6 +1,10 @@
 'Neos.PhpUnconference.Demo:Document.HomePage':
   superTypes:
     'TYPO3.Neos:Document': true
+  constraints:
+    nodeTypes:
+      'TYPO3.Neos:Document': false
+      'Neos.PhpUnconference.Demo:Document.ContentPage': true
   childNodes:
     main:
       type: 'TYPO3.Neos:ContentCollection'

@@ -5,7 +5,7 @@ prototype(Neos.PhpUnconference.Demo:Component.Organism.SiteHeader) < prototype(T
 	}
 	tagName = 'header'
 
-	attributes.class = 'u-pt1/1 u-pb1/1 g siteWrapper'
+	attributes.class = 'u-pt1/1 u-pb1/1 siteWrapper'
 
 	content = TYPO3.TypoScript:Array {
 		logo = Neos.PhpUnconference.Demo:Component.Atom.Logo
@@ -17,6 +17,11 @@ prototype(Neos.PhpUnconference.Demo:Component.Organism.SiteHeader) < prototype(T
 		navigation = Neos.PhpUnconference.Demo:Component.Molecule.Navigation.Main
 		navigation.@process.grid = TYPO3.TypoScript:Tag {
 			attributes.class = 'gi u-w4/6'
+			content = ${value}
+		}
+
+		@process.grid = TYPO3.TypoScript:Tag {
+			attributes.class = 'g'
 			content = ${value}
 		}
 	}

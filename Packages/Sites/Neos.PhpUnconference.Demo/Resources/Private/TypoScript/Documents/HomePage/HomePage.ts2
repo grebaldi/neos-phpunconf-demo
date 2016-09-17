@@ -1,5 +1,1 @@
-prototype(Neos.PhpUnconference.Demo:Document.HomePage.Document) < prototype(Neos.PhpUnconference.Demo:AbstractDocument) {
-	content {
-		headline = '<h1>Hello World</h1>'
-	}
-}
+prototype(Neos.PhpUnconference.Demo:Document.HomePage.Document) < prototype(Neos.PhpUnconference.Demo:AbstractDocument)

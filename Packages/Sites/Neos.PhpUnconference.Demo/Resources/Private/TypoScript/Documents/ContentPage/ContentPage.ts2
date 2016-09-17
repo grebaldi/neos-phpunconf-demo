@@ -1,0 +1,1 @@
+prototype(Neos.PhpUnconference.Demo:Document.ContentPage.Document)  < prototype(Neos.PhpUnconference.Demo:AbstractDocument)

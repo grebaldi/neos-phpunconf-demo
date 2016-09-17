@@ -21,6 +21,19 @@ prototype(Neos.PhpUnconference.Demo:AbstractDocument) < prototype(TYPO3.Neos:Pag
 
 	content = TYPO3.TypoScript:Array {
 		@position = 'after bodyTag'
+
+		header = Neos.PhpUnconference.Demo:Component.Organism.SiteHeader {
+			content.navigation {
+				pages = ${q(site).children('[instanceof TYPO3.Neos:Document][_hiddenInIndex=false]')}
+				content.itemRenderer {
+					attributes.href = TYPO3.Neos:NodeUri {
+						node = ${page}
+					}
+
+					content = ${q(page).property('title')}
+				}
+			}
+		}
 	}
 
 	//
