@@ -1,0 +1,7 @@
+Sitegeist:
+  Monocle:
+    preview:
+      defaultPath: 'atoms'
+      additionalResources:
+        styleSheets:
+          main:  'resource://Neos.PhpUnconference.Demo/Public/Styles/Main.css'

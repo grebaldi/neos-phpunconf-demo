@@ -1,6 +1,6 @@
 include: Documents/**/*.ts2
 include: Prototypes/**/*.ts2
-#include: Components/**/*.ts2
+include: Components/**/*.ts2
 #include: Contents/**/*.ts2
 
 prototype(TYPO3.Neos:ContentCase) {

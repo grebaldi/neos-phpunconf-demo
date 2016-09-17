@@ -1,0 +1,23 @@
+prototype(Neos.PhpUnconference.Demo:Component.Organism.SiteHeader) < prototype(TYPO3.TypoScript:Tag) {
+	@styleguide {
+		path = 'organisms.site-header'
+		title = 'The site header'
+	}
+	tagName = 'header'
+
+	attributes.class = 'u-pt1/1 u-pb1/1 g siteWrapper'
+
+	content = TYPO3.TypoScript:Array {
+		logo = Neos.PhpUnconference.Demo:Component.Atom.Logo
+		logo.@process.grid = TYPO3.TypoScript:Tag {
+			attributes.class = 'gi u-w2/6'
+			content = ${value}
+		}
+
+		navigation = Neos.PhpUnconference.Demo:Component.Molecule.Navigation.Main
+		navigation.@process.grid = TYPO3.TypoScript:Tag {
+			attributes.class = 'gi u-w4/6'
+			content = ${value}
+		}
+	}
+}

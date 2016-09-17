@@ -1,0 +1,9 @@
+prototype(Neos.PhpUnconference.Demo:Component.Atom.Logo) < prototype(TYPO3.TypoScript:Tag) {
+	@styleguide {
+		path = 'atoms.header.logo'
+		title = 'The Brand Logo'
+	}
+
+	attributes.class = 'h1'
+	content = 'LOGO'
+}

@@ -1,0 +1,60 @@
+prototype(Neos.PhpUnconference.Demo:Component.Molecule.Navigation.Main) < prototype(TYPO3.TypoScript:Tag) {
+	@styleguide {
+		path = 'molecules.navigation.main'
+		title = 'Main Navigation'
+
+		props {
+			pages = TYPO3.TypoScript:RawArray {
+				0 = TYPO3.TypoScript:RawArray {
+					link = '#'
+					title = 'Page #1'
+				}
+				1 = TYPO3.TypoScript:RawArray {
+					link = '#'
+					title = 'Page #2'
+				}
+				2 = TYPO3.TypoScript:RawArray {
+					link = '#'
+					title = 'Page #3'
+				}
+				3 = TYPO3.TypoScript:RawArray {
+					link = '#'
+					title = 'Page #4'
+				}
+				4 = TYPO3.TypoScript:RawArray {
+					link = '#'
+					title = 'Page #5'
+				}
+			}
+		}
+	}
+
+	pages = ${[]}
+
+	@context {
+		pages = ${this.pages}
+	}
+
+	tagName = 'nav'
+
+	content = TYPO3.TypoScript:Collection {
+		collection = ${pages}
+		itemName = 'page'
+		itemRenderer = TYPO3.TypoScript:Tag {
+			tagName = 'a'
+			attributes.href = ${page.link}
+			content = ${page.title}
+
+			@process.container = TYPO3.TypoScript:Tag {
+				tagName = 'li'
+				content = ${value}
+			}
+		}
+
+		@process.container = TYPO3.TypoScript:Tag {
+			tagName = 'ul'
+			attributes.class = 'nav nav--fit'
+			content = ${value}
+		}
+	}
+}
