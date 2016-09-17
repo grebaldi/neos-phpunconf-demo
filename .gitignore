@@ -26,3 +26,4 @@ Build/Resources/Java/selenium-server-standalone*
 
 node_modules
 npm-debug.log
+Packages/Sites/Neos.PhpUnconference.Demo/Resources/Public/Styles/Main.css
