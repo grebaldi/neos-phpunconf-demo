@@ -1,0 +1,10 @@
+/**
+ * A case to determine the document prototype to render
+ */
+prototype(Neos.PhpUnconference.Demo:DocumentCase) < prototype(TYPO3.TypoScript:Case) {
+	default {
+		@position = 'end 999999'
+		condition = true
+		type = ${q(node).property('_nodeType.name') + '.Document'}
+	}
+}

@@ -1,4 +1,4 @@
-'Neos.PhpUnconference.Demo:HomePage':
+'Neos.PhpUnconference.Demo:Document.HomePage':
   superTypes:
     'TYPO3.Neos:Document': true
   childNodes:

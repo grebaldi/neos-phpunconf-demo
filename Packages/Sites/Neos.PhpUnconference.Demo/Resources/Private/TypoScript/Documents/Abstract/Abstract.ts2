@@ -1,0 +1,30 @@
+prototype(Neos.PhpUnconference.Demo:AbstractDocument) < prototype(TYPO3.Neos:Page) {
+	head {
+		stylesheets = TYPO3.TypoScript:RawArray {
+			main = 'resource://Neos.PhpUnconference.Demo/Public/Styles/Main.css'
+
+			@process.turnIntoLinkTags = TYPO3.TypoScript:Collection {
+				collection = ${value}
+				itemName = 'path'
+				itemRenderer = TYPO3.TypoScript:Tag {
+					tagName = 'link'
+					attributes {
+						rel = 'stylesheet'
+						href = TYPO3.TypoScript:ResourceUri {
+							path = ${path}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	content = TYPO3.TypoScript:Array {
+		@position = 'after bodyTag'
+	}
+
+	//
+	// Silence default body
+	//
+	body = ''
+}

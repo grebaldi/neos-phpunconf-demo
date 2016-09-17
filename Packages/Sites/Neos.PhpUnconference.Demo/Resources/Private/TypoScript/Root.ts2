@@ -1,0 +1,13 @@
+include: Documents/**/*.ts2
+include: Prototypes/**/*.ts2
+#include: Components/**/*.ts2
+#include: Contents/**/*.ts2
+
+prototype(TYPO3.Neos:ContentCase) {
+	default {
+		type = ${q(node).property('_nodeType.name') + '.Node'}
+		@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+	}
+}
+
+page = Neos.PhpUnconference.Demo:DocumentCase
