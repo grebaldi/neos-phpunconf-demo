@@ -4,6 +4,10 @@
   "description": "------------------ Flow Framework 3.3 ------------------",
   "main": "index.js",
   "scripts": {
+	"build:css": "node-sass Packages/Sites/Neos.PhpUnconference.Demo/Resources/Private/Assets/Sass/Main.scss > Packages/Sites/Neos.PhpUnconference.Demo/Resources/Public/Styles/Main.css",
+	"watch:css": "node-sass -w Packages/Sites/Neos.PhpUnconference.Demo/Resources/Private/Assets/Sass/Main.scss > Packages/Sites/Neos.PhpUnconference.Demo/Resources/Public/Styles/Main.css",
+	"build": "npm run build:css",
+	"watch": "npm run watch:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

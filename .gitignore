@@ -25,3 +25,4 @@ Build/Resources/Java/selenium-server-standalone*
 /"
 
 node_modules
+npm-debug.log
